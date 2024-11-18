@@ -394,7 +394,6 @@ def update_contenido(id_contenido):  # noqa: E501
         
         # Buscar el contenido por ID
         cont = db.session.query(Contenidos).get(id_contenido)
-
         # Actualizar solo los campos que fueron enviados en el cuerpo de la solicitud
         if 'titulo' in data:
             cont.titulo = data['titulo']
