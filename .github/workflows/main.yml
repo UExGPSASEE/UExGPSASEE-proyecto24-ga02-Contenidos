@@ -46,3 +46,4 @@ jobs:
           newman run openapi_server/test/Test_Api_Contenidos.postman_collection.json
         env:
           BASE_URL: http://localhost:8080
+          
