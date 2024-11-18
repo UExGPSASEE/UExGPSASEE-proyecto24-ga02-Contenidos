@@ -5,7 +5,6 @@ db = SQLAlchemy()
 def import_db_temp(database):
     global db
     db = database
-
 class Temporadas(db.Model):
     tablename = 'temporadas'
     
@@ -15,7 +14,6 @@ class Temporadas(db.Model):
     
     def repr(self):
         return f'<Temporada: {self.numerotemporada}>'
-        
     def to_dict(self):
         return {
             "id_temporada": self.idtemporada,
