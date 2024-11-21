@@ -1,7 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
-
 def import_db_temp(database):
     global db
     db = database
@@ -11,7 +10,7 @@ class Temporadas(db.Model):
     idtemporada = db.Column(db.Integer, primary_key=True)
     idcontenido = db.Column(db.Integer, nullable=False)
     numerotemporada = db.Column(db.Integer, nullable=False)
-    
+   
     def repr(self):
         return f'<Temporada: {self.numerotemporada}>'
     def to_dict(self):
@@ -20,3 +19,4 @@ class Temporadas(db.Model):
             "id_contenido": self.idcontenido,
             "numero": self.numerotemporada
         }
+        

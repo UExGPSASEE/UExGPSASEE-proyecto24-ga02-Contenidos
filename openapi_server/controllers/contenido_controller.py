@@ -8,7 +8,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify, request, render_template, make_response
 
 db = SQLAlchemy()
-
 def import_db_controller(database):
     global db
     db = database
