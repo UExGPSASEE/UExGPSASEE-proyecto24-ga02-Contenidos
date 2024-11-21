@@ -19,3 +19,4 @@ class Temporadas(db.Model):
             "id_contenido": self.idcontenido,
             "numero": self.numerotemporada
         }
+        
