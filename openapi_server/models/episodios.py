@@ -5,7 +5,6 @@ db = SQLAlchemy()
 def import_db_ep(database):
     global db
     db = database
-    
 class Episodios(db.Model):
     tablename = 'episodios'
     
